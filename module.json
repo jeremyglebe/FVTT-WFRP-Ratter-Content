@@ -2,7 +2,7 @@
   "id": "fvtt-wfrp-ratter",
   "title": "WFRP Ratter Content",
   "description": "A Foundry VTT content module implementing fan-created WFRP material from The Ratter magazine for the WFRP4e system.",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "authors": [
     {
       "name": "jeremyglebe"
@@ -28,28 +28,37 @@
   ],
   "packs": [
     {
-      "name": "items",
-      "label": "Items",
-      "path": "packs/items",
+      "name": "ratter-09-items",
+      "label": "Ratter #9 Items",
+      "path": "packs/ratter-09-items",
       "type": "Item",
       "system": "wfrp4e"
     },
     {
-      "name": "journals",
-      "label": "Journals",
-      "path": "packs/journals",
+      "name": "ratter-09-journals",
+      "label": "Ratter #9 Journals",
+      "path": "packs/ratter-09-journals",
       "type": "JournalEntry",
       "system": "wfrp4e"
     }
   ],
   "packFolders": [
     {
-      "name": "WFRP Ratter Content",
+      "name": "WFRP4e Ratter Content",
       "sorting": "m",
       "color": "#465967",
-      "packs": [
-        "items",
-        "journals"
+      "packs": [],
+      "folders": [
+        {
+          "name": "Ratter #9",
+          "sorting": "m",
+          "color": "#465967",
+          "packs": [
+            "ratter-09-items",
+            "ratter-09-journals"
+          ],
+          "folders": []
+        }
       ]
     }
   ],
@@ -69,5 +78,5 @@
   },
   "url": "https://github.com/jeremyglebe/FVTT-WFRP-Ratter-Content",
   "manifest": "https://github.com/jeremyglebe/FVTT-WFRP-Ratter-Content/releases/latest/download/module.json",
-  "download": "https://github.com/jeremyglebe/FVTT-WFRP-Ratter-Content/releases/download/v0.0.4/module.zip"
+  "download": "https://github.com/jeremyglebe/FVTT-WFRP-Ratter-Content/releases/download/v0.0.5/module.zip"
 }
