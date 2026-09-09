@@ -1,6 +1,6 @@
-import { B as e, F as t, I as n, K as r, L as i, M as a, N as o, O as s, P as c, R as l, V as u, l as d, n as f, r as p, rt as m, w as h, z as g } from "./mutation-drop-Bc32Aq0J.js";
+import { B as e, F as t, I as n, K as r, L as i, M as a, N as o, O as s, P as c, R as l, V as u, l as d, n as f, r as p, rt as m, w as h, z as g } from "./mutation-drop-BHS5UE2d.js";
 //#region src/module/wfrp4e/mutants-handbook/acquisition-eligibility.ts
-var ee = new Set([
+var ee = /* @__PURE__ */ new Set([
 	"bachtrachian suckers",
 	"bestial legs",
 	"centauroid",
@@ -10,7 +10,7 @@ var ee = new Set([
 	"unnatural legs"
 ]);
 function te(t, r) {
-	let a = new Set(["left", "right"]), s = !1;
+	let a = /* @__PURE__ */ new Set(["left", "right"]), s = !1;
 	for (let n of o(t, r)) {
 		let t = g(n.name), r = e(n);
 		if (t === "razor-sharp claws" && a.clear(), t === "pincer claw") {
@@ -474,7 +474,7 @@ function P(e, t, n, r) {
 function F(e) {
 	return typeof e == "object" && !!e && !Array.isArray(e);
 }
-var ye = new Set([
+var ye = /* @__PURE__ */ new Set([
 	"ag",
 	"bs",
 	"dex",
@@ -485,7 +485,7 @@ var ye = new Set([
 	"t",
 	"wp",
 	"ws"
-]), be = new Set([
+]), be = /* @__PURE__ */ new Set([
 	"ceil",
 	"floor",
 	"round"
@@ -885,7 +885,7 @@ function J(e) {
 }
 function Pe(e, t, n) {
 	let r = q(e.state?.rolls), i = Object.fromEntries((e.retainedRolls ?? []).filter((e) => typeof r[e.key] == "number").map((e) => [e.key, r[e.key]]));
-	if (!(Object.keys(i).length === 0 && n.length === 0)) return {
+	if (Object.keys(i).length !== 0 || n.length !== 0) return {
 		acceptedBlocks: [...n],
 		grants: [],
 		modifiers: [],
@@ -938,7 +938,7 @@ function Y(e) {
 	return F(e) ? e.type === "mutation" && typeof e.id == "string" && typeof e.name == "string" && typeof e.getFlag == "function" && typeof e.toObject == "function" : !1;
 }
 function X(e, t) {
-	return t.items.has?.(e.id) === !0 ? !0 : t.items.get?.(e.id) !== void 0 || [...t.items].some((t) => t === e);
+	return t.items.has?.(e.id) === !0 || t.items.get?.(e.id) !== void 0 || [...t.items].some((t) => t === e);
 }
 function Re(e) {
 	let t = e.mutationAcquisitionAcceptedBlocks;
@@ -1044,4 +1044,4 @@ async function Ve(e) {
 //#endregion
 export { Ve as resolveOwnedMutationAcquisition };
 
-//# sourceMappingURL=runtime-CMwf_G8N.js.map
+//# sourceMappingURL=runtime-Dm5WAeM4.js.map
