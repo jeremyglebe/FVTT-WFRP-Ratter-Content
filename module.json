@@ -2,7 +2,7 @@
   "id": "fvtt-wfrp-ratter",
   "title": "Drowsy's WFRP4e Ratter Implementation",
   "description": "A Foundry VTT content module implementing fan-created WFRP material from The Ratter magazine for the WFRP4e system.",
-  "version": "0.1.19",
+  "version": "0.1.20",
   "authors": [
     {
       "name": "jeremyglebe"
@@ -20,6 +20,10 @@
       }
     ],
     "recommends": [
+      {
+        "id": "wfrp4e-customizer-apps",
+        "type": "module"
+      },
       {
         "id": "wfrp4e-wom",
         "type": "module"
@@ -39,6 +43,13 @@
     "styles/fvtt-wfrp-ratter.css"
   ],
   "packs": [
+    {
+      "name": "ratter-species",
+      "label": "Ratter Species (Requires Drowsy's WFRP4e Customizers)",
+      "path": "packs/ratter-species",
+      "type": "Item",
+      "system": "wfrp4e"
+    },
     {
       "name": "ratter-09-items",
       "label": "Ratter #9 Items",
@@ -108,7 +119,9 @@
       "name": "Drowsy's WFRP4e Ratter Implementation",
       "sorting": "m",
       "color": "#465967",
-      "packs": [],
+      "packs": [
+        "ratter-species"
+      ],
       "folders": [
         {
           "name": "Ratter #9",
@@ -162,5 +175,5 @@
   },
   "url": "https://github.com/jeremyglebe/Foundry.Warhammer.Ratter-Implementation",
   "manifest": "https://github.com/jeremyglebe/Foundry.Warhammer.Ratter-Implementation/releases/latest/download/module.json",
-  "download": "https://github.com/jeremyglebe/Foundry.Warhammer.Ratter-Implementation/releases/download/v0.1.19/module.zip"
+  "download": "https://github.com/jeremyglebe/Foundry.Warhammer.Ratter-Implementation/releases/download/v0.1.20/module.zip"
 }
